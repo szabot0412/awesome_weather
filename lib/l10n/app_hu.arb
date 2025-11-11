@@ -1,0 +1,14 @@
+{
+  "app_name": "Awesome Weather",
+  "cloud_cover": "Felhőzet",
+  "rain": "Eső",
+  "wind": "Szélsebesség",
+  "no_data": "Nincs adat",
+  "location": "Szél: {lat}, Hossz: {long}",
+  "@location": {
+    "placeholders": {
+      "lat": {},
+      "long": {}
+    }
+  }
+}

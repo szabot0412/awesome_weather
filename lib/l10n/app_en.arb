@@ -1,0 +1,14 @@
+{
+  "app_name": "Awesome Weather",
+  "cloud_cover": "Clouds",
+  "rain": "Rain",
+  "wind": "Wind speed",
+  "no_data": "No data",
+  "location": "Lat: {lat}, Lng: {long}",
+  "@location": {
+    "placeholders": {
+      "lat": {},
+      "long": {}
+    }
+  }
+}
