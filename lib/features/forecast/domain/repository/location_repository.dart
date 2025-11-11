@@ -1,5 +1,5 @@
-import 'package:geolocator/geolocator.dart';
+import 'package:awesome_weather/features/forecast/domain/entity/location_entity.dart';
 
 abstract class LocationRepository{
-  Future<Position?> getLocation();
+  Future<LocationEntity?> getLocation();
 }
