@@ -18,7 +18,7 @@ class DayDetailBloc extends Bloc<DayDetailEvent, DayDetailState> {
     on<GetDayDetailEvent>((event, emit) async {
       emit(DayDetailStateLoading());
       try{
-        DayDetailEntity detail = await _getForecastList.call(latitude: location.latitude, longitude: location.longitude, date: date);
+        DayDetailsEntity detail = await _getForecastList.call(latitude: location.latitude, longitude: location.longitude, date: date);
         emit(DayDetailStateLoaded(detail));
       }catch(e){
         debugPrint(e.toString());

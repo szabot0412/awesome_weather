@@ -207,8 +207,8 @@ return $default(_that.time,_that.temperature2m,_that.rain,_that.weatherCode,_tha
 /// @nodoc
 
 @JsonSerializable(fieldRename: FieldRename.snake)
-class _CurrentValues implements CurrentValues {
-  const _CurrentValues({required this.time, @JsonKey(name: "temperature_2m") required this.temperature2m, required this.rain, required this.weatherCode, required this.cloudCover, @JsonKey(name: "wind_speed_10m") required this.windSpeed10m});
+class _CurrentValues extends CurrentValues {
+  const _CurrentValues({required this.time, @JsonKey(name: "temperature_2m") required this.temperature2m, required this.rain, required this.weatherCode, required this.cloudCover, @JsonKey(name: "wind_speed_10m") required this.windSpeed10m}): super._();
   factory _CurrentValues.fromJson(Map<String, dynamic> json) => _$CurrentValuesFromJson(json);
 
 @override final  DateTime time;

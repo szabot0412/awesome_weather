@@ -12,6 +12,6 @@ class DayDetailStateError extends DayDetailState {
 }
 
 class DayDetailStateLoaded extends DayDetailState {
-  final DayDetailEntity dayDetail;
+  final DayDetailsEntity dayDetail;
   DayDetailStateLoaded(this.dayDetail);
 }

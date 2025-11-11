@@ -213,8 +213,8 @@ return $default(_that.latitude,_that.longitude,_that.hourly);case _:
 /// @nodoc
 @JsonSerializable()
 
-class _DayDetails implements DayDetails {
-  const _DayDetails({required this.latitude, required this.longitude, required this.hourly});
+class _DayDetails extends DayDetails {
+  const _DayDetails({required this.latitude, required this.longitude, required this.hourly}): super._();
   factory _DayDetails.fromJson(Map<String, dynamic> json) => _$DayDetailsFromJson(json);
 
 @override final  double latitude;

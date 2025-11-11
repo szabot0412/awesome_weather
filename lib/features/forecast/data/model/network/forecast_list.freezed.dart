@@ -223,8 +223,8 @@ return $default(_that.latitude,_that.longitude,_that.current,_that.daily);case _
 /// @nodoc
 
 @JsonSerializable(fieldRename: FieldRename.snake)
-class _ForecastList implements ForecastList {
-  const _ForecastList({required this.latitude, required this.longitude, required this.current, required this.daily});
+class _ForecastList extends ForecastList {
+  const _ForecastList({required this.latitude, required this.longitude, required this.current, required this.daily}): super._();
   factory _ForecastList.fromJson(Map<String, dynamic> json) => _$ForecastListFromJson(json);
 
 @override final  double latitude;
